@@ -1,0 +1,28 @@
+$ColorFuenteTitulo: #666666;
+$ColorFondoTitulo: #f47b7b;
+
+@mixin formatoComunTitulo(){
+    background-color: $ColorFondoTitulo;
+    padding: 10px;
+    border-radius: 10px;
+    color: $ColorFuenteTitulo; 
+}
+
+@mixin formatoComunParrafo(){
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    color: $ColorFuenteTitulo; 
+}
+
+.Titulo
+{
+    @include formatoComunTitulo();
+}
+
+.Parrafo
+{
+    @include formatoComunParrafo();
+    margin-left: 50px;
+    padding-left: 30px;
+}
